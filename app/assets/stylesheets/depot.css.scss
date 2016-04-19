@@ -16,6 +16,10 @@
         border-bottom: 3px dotted #77d;
 }
 
+#store .entry form, #store .entry form div {
+  display: inline;
+}
+
 /* Styly pro products/index */
 
 #product_list table {
@@ -92,8 +96,8 @@
 }
 
 #store .entry p {
- margin-top: 0.5em; 
- margin-bottom: 0.8em; 
+ margin-top: 0.5em;
+ margin-bottom: 0.8em;
 }
 
 #store .entry .price_line {
