@@ -5,6 +5,8 @@
   <% end %>
 </ul>
 
+<%= button_to 'Vyprázdnit košík', @cart, :method => :delete,
+              :confirm => 'Opravdu vyprázdnit?' %>
 <p id="notice"><%= notice %></p>
 
 
