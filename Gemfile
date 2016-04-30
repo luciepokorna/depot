@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'test-unit', '~> 3.0'
+gem 'rails-i18n', '~> 3.0.0' # For 3.x
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
