@@ -1,1 +1,6 @@
-$('#cart').html("<%=j render @cart %>");
+page.select("#notice").each { |notice| notice.hide }
+
+$('#cart').html("<%=j render @cart %>").show()
+
+$('#current_item').css({'background-color':'#88ff88'}).
+  animate({'background-color':'#114411'}, 1000);
