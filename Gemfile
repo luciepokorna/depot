@@ -23,7 +23,8 @@ end
 gem 'jquery-rails', '~> 2.3'
 gem 'test-unit', '~> 3.0'
 gem 'rails-i18n', '~> 3.0.0' # For 3.x
-gem 'will_paginate', '~> 3.0'
+gem 'will_paginate', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

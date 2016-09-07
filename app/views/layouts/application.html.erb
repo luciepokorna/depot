@@ -18,15 +18,26 @@
             <%= render @cart %>
           <% end %>
       <% end %>
+  <ul>
+      <li><a href="/">Úvod</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/news">Novinky</a></li>
+      <li><a href="/contact">Kontaktní údaje</a></li>
+  </ul>
 
-      <a href="/">Úvod</a><br />
-      <a href="/faq">FAQ</a><br />
-      <a href="/news">Novinky</a><br />
-      <a href="/contact">Kontaktní údaje</a><br />
-    </div>
-    <div id="main" >
-      <%= yield %>
-    </div>
-  </div>
+  <% if session[:user_id] %>
+  <ul>
+  <li><%= link_to 'Objednávky', orders_path %></li>
+  <li><%= link_to 'Produkty', products_path %></li>
+  <li><%= link_to 'Uživatelé', users_path %></li>
+  </ul>
+  <%= button_to 'Odhlášení', logout_path, method: :delete %>
+  <% end %>
+</div>
+<div id="main" >
+  <%= yield %>
+</div>
+</div>
+
 </body>
 </html>
